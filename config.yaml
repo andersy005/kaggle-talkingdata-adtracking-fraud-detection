@@ -3,12 +3,13 @@
 worker:
   replicas: 8
   limits:
-    cpu: 2
-    memory: 7.5 GiB
+    cpu: 4
+    memory: 26 GiB
   pipPackages: >-
     git+https://github.com/dask/gcsfs.git
     git+https://github.com/ioam/holoviews.git
     git+https://github.com/ahuang11/holoext.git
+    git+https://github.com/pydata/xarray.git
     git+https://github.com/scikit-learn-contrib/imbalanced-learn.git
   condaPackages: >-
     -c conda-forge
@@ -26,6 +27,7 @@ jupyter:
     git+https://github.com/dask/gcsfs.git
     git+https://github.com/ioam/holoviews.git
     git+https://github.com/ahuang11/holoext.git
+    git+https://github.com/pydata/xarray.git
     git+https://github.com/scikit-learn-contrib/imbalanced-learn.git
   condaPackages: >-
     -c conda-forge
