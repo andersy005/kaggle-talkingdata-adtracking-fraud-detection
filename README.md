@@ -14,6 +14,8 @@ app advertisement.
 - `train_sample.csv`:               4.08MB
 
 
+## [Notebook](http://nbviewer.jupyter.org/github/andersy005/kaggle-talkingdata-adtracking-fraud-detection/blob/master/kaggle-dask-gce.ipynb)
+
 ## Dask Cluster on Google Cloud
 
 ### Create a Kubernetes cluster on Google Cloud
@@ -47,8 +49,8 @@ Initialization
 After installing helm on your machine, initialize helm on your Kubernetes cluster. At the terminal, enter:
 
     kubectl --namespace kube-system create sa tiller
-kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
-helm init --service-account tiller
+    kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
+    helm init --service-account tiller
 
 Helm Install Dask
 
