@@ -92,3 +92,7 @@ Connect to Dask and Jupyter
     veering-ocelot-scheduler   LoadBalancer   10.43.241.39   35.194.26.249    8786:31932/TCP,80:32597/TCP8m
 
 We can navigate to these from any web browser. One is the Dask diagnostic dashboard. The other is the Jupyter server. You can log into the Jupyter notebook server with the password, dask
+
+### Configure Environment
+
+    helm upgrade veering-ocelot dask/dask -f config.yaml
